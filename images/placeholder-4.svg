@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Placeholder for photo-4.jpg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5d9e"/><stop offset="1" stop-color="#ffd36e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <rect x="24" y="24" width="752" height="552" rx="26" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="4" stroke-dasharray="18 14"/>
+  <g transform="translate(400 250)" fill="#fff" opacity=".95">
+    <rect x="-80" y="-48" width="160" height="112" rx="18"/>
+    <rect x="-30" y="-66" width="60" height="24" rx="8"/>
+    <circle cx="0" cy="8" r="36" fill="url(#g)"/>
+    <circle cx="0" cy="8" r="20" fill="#fff"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="Verdana, sans-serif" font-size="44" font-weight="bold" fill="#fff">photo-4.jpg</text>
+  <text x="400" y="450" text-anchor="middle" font-family="Verdana, sans-serif" font-size="25" fill="rgba(255,255,255,.9)">a picture of HIM and ME goes great here</text>
+  <text x="400" y="492" text-anchor="middle" font-family="Verdana, sans-serif" font-size="21" fill="rgba(255,255,255,.75)">same folder, same naming</text>
+</svg>

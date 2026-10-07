@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Rakesh Anna! 🎂</title>
+<meta name="description" content="A slightly unhinged, fully heartfelt birthday website for Rakesh Anna.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="confetti-canvas" aria-hidden="true"></canvas>
+<div id="balloon-layer" aria-hidden="true"></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-sticker">⚠️ Certified Cringe Zone ⚠️</div>
+  <h1 class="hero-title">
+    <span class="line-1">This entire website</span>
+    <span class="line-2">is about</span>
+    <span class="line-3 shiny">RAKESH ANNA</span>
+  </h1>
+  <p class="hero-sub">
+    He didn't ask for it. He can't escape it. The domain is already paid for.
+  </p>
+
+  <div class="stat-strip">
+    <div class="stat"><b data-count="1">0</b><span>of him in existence</span></div>
+    <div class="stat"><b data-count="9999">0</b><span>times he said "Dei, en da?"</span></div>
+    <div class="stat"><b data-count="0">0</b><span>times he gave up on me</span></div>
+  </div>
+
+  <a class="scroll-cue" href="#quotes">Scroll down! 👇</a>
+</header>
+
+<!-- ============ QUOTES ============ -->
+<section class="section" id="quotes">
+  <h2 class="section-title">The Things I Keep Saying About Him</h2>
+  <p class="section-sub">
+    Yes, they're cringe. No, I will not be taking corrections.
+    <button id="cringe-toggle" class="btn btn-ghost" type="button" aria-pressed="false">
+      Turn on Honest Translation 🔊
+    </button>
+  </p>
+
+  <div class="quote-grid">
+    <figure class="quote-card" style="--i:0">
+      <div class="tape"></div>
+      <blockquote>“Everyone deserves a friend like Rakesh anna.”</blockquote>
+      <figcaption class="translation">Translation: Sorry, you can't have him. Supply is limited to one (1) unit and I called dibs in advance.</figcaption>
+    </figure>
+
+    <figure class="quote-card" style="--i:1">
+      <div class="tape"></div>
+      <blockquote>“No matter what I do, what I do not do, he will stick strong and stand by me through it all.”</blockquote>
+      <figcaption class="translation">Translation: I have tested this. Repeatedly. With increasingly questionable decisions. The man does not budge.</figcaption>
+    </figure>
+
+    <figure class="quote-card" style="--i:2">
+      <div class="tape"></div>
+      <blockquote>“The little girl inside me started healing after you, Rakesh anna.”</blockquote>
+      <figcaption class="translation">Translation: You accidentally became free therapy with unlimited sessions and zero cancellation policy.</figcaption>
+    </figure>
+
+    <figure class="quote-card" style="--i:3">
+      <div class="tape"></div>
+      <blockquote>“Thank you for never hating me and always trusting in me.”</blockquote>
+      <figcaption class="translation">Translation: Honestly, bold of you. But thank you. Genuinely. (Okay moving on before I cry.)</figcaption>
+    </figure>
+  </div>
+
+  <div class="cringe-meter">
+    <span>Cringe Meter</span>
+    <div class="meter-track"><div class="meter-fill"></div></div>
+    <span class="meter-label">worth it 💅</span>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section alt" id="gallery">
+  <h2 class="section-title">Photographic Evidence</h2>
+  <p class="section-sub">Exhibits A through F, submitted to the court of "I'm stuck with you and can never get rid of you!".</p>
+
+  <div class="gallery" id="gallery-grid">
+    <!-- Photos are injected by js/main.js from the PHOTOS list -->
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="section" id="quiz">
+  <h2 class="section-title">A Small Friendship Test</h2>
+  <p class="section-sub">Rigged. Completely rigged. Answer honestly anyway.</p>
+
+  <div class="quiz-card">
+    <div class="quiz-progress"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+    <div class="quiz-count" id="quiz-count">Question 1 of 5</div>
+    <h3 class="quiz-question" id="quiz-question">Loading the interrogation…</h3>
+
+    <div class="answer-arena" id="answer-arena">
+      <button class="btn btn-answer" id="answer-good" type="button"></button>
+      <button class="btn btn-answer runaway" id="answer-bad" type="button"></button>
+    </div>
+
+    <p class="taunt" id="taunt" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="section finale" id="finale" hidden>
+  <div class="cake">🎂</div>
+  <h2 class="finale-title shiny">Happy Birthday,<br>Rakesh Anna!</h2>
+  <p class="finale-text">
+    Thank you for being the brother the universe forgot to put on my birth certificate.
+    Thank you for never hating me, for always trusting me, and for standing there like a
+    stubborn wall every single time I tried to run.
+  </p>
+  <p class="finale-text">
+    The little girl inside me started healing because of you! Thank you for being there for her, and for me.
+  </p>
+  <p class="finale-sign">— your permanent "Enemy" :)</p>
+
+  <div class="finale-buttons">
+    <button class="btn btn-primary" id="more-confetti" type="button">MORE CONFETTI 🎉</button>
+    <button class="btn btn-ghost" id="restart-quiz" type="button">Take the test again, anna 🔁</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Made with love, zero design budget, and an unreasonable amount of free time.</p>
+  <p class="tiny">🎈 Tap anywhere for confetti.</p>
+</footer>
+
+<script src="js/confetti.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
